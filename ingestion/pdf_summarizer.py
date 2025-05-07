@@ -1,4 +1,4 @@
-import fitz  # PyMuPDF
+import PyMuPDF  # PyMuPDF
 import nltk
 from sumy.parsers.plaintext import PlaintextParser
 from sumy.nlp.tokenizers import Tokenizer
@@ -10,7 +10,7 @@ nltk.download("punkt")
 def extract_text_from_pdf(uploaded_file):
     """Extracts text from a PDF file (uploaded as stream)."""
     text = ""
-    with fitz.open(stream=uploaded_file.read(), filetype="pdf") as doc:
+    with PyMuPDF.open(stream=uploaded_file.read(), filetype="pdf") as doc:
         for page in doc:
             text += page.get_text()
     return text.strip()
