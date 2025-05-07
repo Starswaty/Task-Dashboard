@@ -3,7 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
 from io import BytesIO
-from fpdf import FPDF
 from ingestion.news import fetch_news
 from ingestion.sentiment import analyze_sentiment
 from ingestion.fx import fetch_live_fx_rates
