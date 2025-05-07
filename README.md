@@ -30,45 +30,6 @@ This project combines multiple data ingestion pipelines with RAG-based querying 
 | **🧠 RAG Query Handler** | Accepts free-form queries and returns synthesized insights from indexed sources using FAISS. |
 | **📊 Interactive Dashboard** | Built using Streamlit and Plotly for real-time visualizations and CSV downloads. |
 
----
-
-## 🗂️ Project Structure
-
-.
-├── data/                        # Ingested raw and processed data files
-│   ├── TCS_historical_data.csv
-│   ├── INFY_historical_data.csv
-│   ├── fx_rates.csv
-│   ├── news_feed.csv
-│   ├── news_sentiment.csv
-│   ├── realtime_feed.csv
-│   ├── unit-2 (2)_summary.pdf
-│   ├── news_feed.txt
-│   ├── news_sentiment_summary.txt
-│   └── ...
-│
-├── ingestion/                  # Data ingestion and preprocessing pipelines
-│   ├── fx.py
-│   ├── historical.py
-│   ├── news.py
-│   ├── real_time.py
-│   ├── sentiment.py
-│   ├── sentiment_analysis.py
-│   ├── pdf_summarizer.py
-│   └── __pycache__/
-│
-├── rag/                        # Retrieval-Augmented Generation layer
-│   ├── faiss_index.py
-│   ├── query_handler.py
-│   └── __pycache__/
-│
-├── streamlit/                  # Main app and config
-│   ├── app.py
-│   └── config.toml
-│
-├── summary_output.pdf
-├── requirements.txt            # Project dependencies
-└── README.md                   # You're here!
 
 ## 🔍 How It Works
 
