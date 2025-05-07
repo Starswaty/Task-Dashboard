@@ -10,6 +10,7 @@ plotly
 pandas
 datetime
 fitz
+pyMuPDF
 sumy
 nltk
 textblob
