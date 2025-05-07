@@ -34,32 +34,7 @@ This project combines multiple data ingestion pipelines with RAG-based querying 
 
 ## 🗂️ Project Structure
 
-.
-├── data/ # Ingested raw and processed data files
-│ ├── TCS_historical_data.csv
-│ ├── fx_rates.csv
-│ ├── news_feed.csv
-│ └── ...
-│
-├── ingestion/ # Data ingestion and preprocessing pipelines
-│ ├── fx.py
-│ ├── news.py
-│ ├── real_time.py
-│ ├── sentiment.py
-│ ├── pdf_summarizer.py
-│ └── ...
-│
-├── rag/ # Retrieval-Augmented Generation layer
-│ ├── faiss_index.py
-│ └── query_handler.py
-│
-├── streamlit/ # Main app and config
-│ ├── app.py
-│ └── config.toml
-│
-├── requirements.txt # Project dependencies
-└── README.md # You're here!
-
+<pre> . ├── data/ # Ingested raw and processed data files │ ├── TCS_historical_data.csv │ ├── fx_rates.csv │ ├── news_feed.csv │ └── ... │ ├── ingestion/ # Data ingestion and preprocessing pipelines │ ├── fx.py │ ├── news.py │ ├── real_time.py │ ├── sentiment.py │ ├── pdf_summarizer.py │ └── ... │ ├── rag/ # Retrieval-Augmented Generation layer │ ├── faiss_index.py │ └── query_handler.py │ ├── streamlit/ # Main app and config │ ├── app.py │ └── config.toml │ ├── requirements.txt # Project dependencies └── README.md # You're here! </pre>
 
 ## 🔍 How It Works
 
