@@ -20,7 +20,7 @@ api_key = "ZdwWgzQpkNwUREwUAh3ThrJTJAbDoWHZAy80WV3t"  # Replace with your Cohere
 co = cohere.Client(api_key)
 
 # Path to your data folder containing CSV and TXT files
-data_folder =  "C:/Users/swatantra/Desktop/New folder/Stock-Analysis-Dashboard/data" # Replace with actual path
+data_folder =  data_folder = os.path.join(os.path.dirname(__file__), "data")# Replace with actual path
 
 def simulate_reading_files():
     """
