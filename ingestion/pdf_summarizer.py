@@ -1,4 +1,4 @@
-import PyMuPDF  # PyMuPDF
+import pdfplumber
 import nltk
 from sumy.parsers.plaintext import PlaintextParser
 from sumy.nlp.tokenizers import Tokenizer
@@ -10,9 +10,9 @@ nltk.download("punkt")
 def extract_text_from_pdf(uploaded_file):
     """Extracts text from a PDF file (uploaded as stream)."""
     text = ""
-    with PyMuPDF.open(stream=uploaded_file.read(), filetype="pdf") as doc:
-        for page in doc:
-            text += page.get_text()
+    with pdfplumber.open(uploaded_file) as pdf:
+        for page in pdf.pages:
+            text += page.extract_text()
     return text.strip()
 
 

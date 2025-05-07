@@ -9,7 +9,7 @@ faiss-cpu
 plotly
 pandas
 datetime
-PyMuPDF
+pdfplumber
 sumy
 nltk
 textblob
