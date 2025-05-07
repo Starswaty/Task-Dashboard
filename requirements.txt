@@ -8,12 +8,10 @@ sentence-transformers
 faiss-cpu
 plotly
 pandas
-
 datetime
 fitz
 sumy
 nltk
-time
 textblob
 torch
 numpy
