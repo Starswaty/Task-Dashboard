@@ -17,4 +17,4 @@ textblob
 torch
 numpy
 cohere
-matplotlib.pylot
+matplotlib
